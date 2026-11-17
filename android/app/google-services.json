@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "868709251113",
+    "project_id": "whatlunch-15416",
+    "storage_bucket": "whatlunch-15416.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868709251113:android:d29771e32de1ebdde10438",
+        "android_client_info": {
+          "package_name": "com.baekson.miro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_piPCyn0lDsqErSn2kDxI3_9ROZ9Ff5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
