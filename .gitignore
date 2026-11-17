@@ -1,9 +1,10 @@
+# =========================
 # Miscellaneous
+# =========================
 *.class
 *.log
 *.pyc
 *.swp
-.DS_Store
 .atom/
 .build/
 .buildlog/
@@ -12,34 +13,92 @@
 .swiftpm/
 migrate_working_dir/
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
+# =========================
+# Environment & secrets
+# =========================
+.env
+.env.*
+!.env.example
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# Android signing
+*.jks
+*.keystore
+key.properties
+**/key.properties
 
-# Flutter/Dart/Pub related
+# Firebase / Google mobile config (contains API keys)
+google-services.json
+**/google-services.json
+GoogleService-Info.plist
+**/GoogleService-Info.plist
+lib/firebase_options.dart
+**/firebase_options.dart
+
+# =========================
+# Flutter / Dart
+# =========================
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
+.packages
 .pub-cache/
 .pub/
-/build/
-/coverage/
+build/
+**/build/
+coverage/
+.flutter-plugins-dependencies
 
-# Symbolication related
+# Symbolication / obfuscation
 app.*.symbols
-
-# Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
+# Android Studio build outputs
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Local Android SDK path
+**/local.properties
+
+# Lockfiles (keep Flutter app lockfile)
+*.lock
+!pubspec.lock
+
+# =========================
+# IDE & OS
+# =========================
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+**/.DS_Store
+Thumbs.db
+**/Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# Vercel / Web / Node
+# =========================
+.vercel/
+node_modules/
+**/node_modules/
+.npm/
+.next/
+.nuxt/
+dist/
+.turbo/
+.cache/
+
+# =========================
+# iOS / macOS extras
+# =========================
+**/Pods/
+**/.symlinks/
+**/DerivedData/
+xcuserdata/
+*.xcuserstate
