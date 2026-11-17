@@ -1,6 +1,31 @@
-# Deploy only static legal docs — ignore Flutter/Android/iOS bulk.
-*
-!docs/
-!docs/**
-!vercel.json
-!.vercelignore
+# Keep Flutter/native trees out of the Vercel upload; docs are copied to public at build.
+.dart_tool
+.build
+.idea
+.vscode
+android
+ios
+linux
+macos
+windows
+web
+lib
+test
+assets
+fonts
+coverage
+build
+*.iml
+*.lock
+pubspec.yaml
+pubspec.lock
+analysis_options.yaml
+README.md
+firebase.json
+.firebaserc
+firestore.rules
+firestore.indexes.json
+google-services.json
+GoogleService-Info.plist
+.env
+.env.*
