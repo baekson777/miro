@@ -1,0 +1,6 @@
+# Deploy only static legal docs — ignore Flutter/Android/iOS bulk.
+*
+!docs/
+!docs/**
+!vercel.json
+!.vercelignore

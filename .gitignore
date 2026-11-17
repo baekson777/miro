@@ -102,3 +102,5 @@ dist/
 **/DerivedData/
 xcuserdata/
 *.xcuserstate
+.vercel
+.env*
